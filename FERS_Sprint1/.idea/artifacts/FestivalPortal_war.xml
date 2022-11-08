@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FestivalPortal:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>FestivalPortal</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="FestivalPortal-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="FestivalPortal:war exploded" />
+    </root>
+  </artifact>
+</component>
