@@ -18,13 +18,7 @@ class VisitorTests {
 	@BeforeEach
 	void setUp() {
 		v = new Visitor();
-//	    v.setAddress("avenida 1234");
-//		v.setDni("12345678A");
-//		v.setEmail("ahsak@hah.com");
-//		v.setLastName("migato");
-//		v.setPassword("1234567");
-//		v.setPhoneNumber("123456789");
-//		v.setVisitorId(1);
+
 	}
 	
 	//Se ejecuta después de ejecutar un test

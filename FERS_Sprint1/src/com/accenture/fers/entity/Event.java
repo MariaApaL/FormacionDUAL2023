@@ -100,7 +100,13 @@ public class Event {
 	}
 
 	public void setDescription(String description) {
-		this.description = description;
+		boolean validate = Validator.lengthValidator(description, 1, 30);
+		
+		if((description!=null)&&!description.equals("")&&validate) {
+			this.description = description;
+		}else {
+			throw new FERSGenericException("Please provide a description");
+		}
 	}
 
 	public String getPlace() {
@@ -108,7 +114,14 @@ public class Event {
 	}
 
 	public void setPlace(String place) {
-		this.place = place;
+boolean validate = Validator.lengthValidator(place, 1, 30);
+		
+		if((place!=null)&&!place.equals("")&&validate) {
+			this.place = place;
+		}else {
+			throw new FERSGenericException("Please provide a place");
+		}
+		
 	}
 
 	public String getDuration() {
@@ -116,7 +129,13 @@ public class Event {
 	}
 
 	public void setDuration(String duration) {
-		this.duration = duration;
+    boolean validate = Validator.lengthValidator(duration, 1, 30);
+		
+		if((duration!=null)&&!duration.equals("")&&validate) {
+			this.duration = duration;
+		}else {
+			throw new FERSGenericException("Please provide a duration");
+		}
 	}
 
 	public String getEventType() {
@@ -124,7 +143,13 @@ public class Event {
 	}
 
 	public void setEventType(String eventType) {
-		this.eventType = eventType;
+   boolean validate = Validator.lengthValidator(eventType, 1, 30);
+		
+		if((eventType!=null)&&!eventType.equals("")&&validate) {
+			this.eventType = eventType;
+		}else {
+			throw new FERSGenericException("Please provide an eventType");
+		}
 	}
 
 	public int getSeatsAvailable() {
@@ -132,7 +157,9 @@ public class Event {
 	}
 
 	public void setSeatsAvailable(int seatsAvailable) {
-		this.seatsAvailable = seatsAvailable;
+   
+			this.seatsAvailable = seatsAvailable;
+		
 	}
 
 
